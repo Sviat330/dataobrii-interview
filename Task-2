@@ -1,0 +1,16 @@
+Dockerfile:
+'
+FROM python:3.8-slim-buster
+
+RUN pip install --upgrade pip
+
+RUN pip install pandas==1.2
+'
+
+List dir in docker container:
+'
+docker run -it python-pandas bash 
+ls 
+result:
+bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+'
